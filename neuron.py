@@ -16,7 +16,7 @@ target = torch.randn([1, 100, 64])
 
 model = Net()
 criterian = torch.nn.MSELoss()
-optimazer = torch.optim.SGD(model.parameters(), lr=0.0003)
+optimazer = torch.optim.SGD(model.parameters(), lr=0.001)
 
 for epoch in range(10):
     output = model(x)
